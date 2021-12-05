@@ -1,0 +1,423 @@
+html, body{
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+::-moz-focus-outer, ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    min-width: 320px;
+    
+    line-height: 1.65;
+
+    opacity: 1;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+section{
+    padding-top: 2%;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+
+header
+{
+    height:  100px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    
+    
+}
+
+.logo-container{
+    display: flex;
+    vertical-align: center;
+}
+
+.logo-container a:visited{
+    color: #e68dba;
+}
+
+header .logo-container img{
+    width: 20%;
+    height: 20%;
+    
+}
+
+
+header .logo-container{
+    margin-left: 5%;
+    
+}
+
+
+header .mnu-top{
+    list-style-type: none;
+    margin-right: 5%;
+}
+
+header .mnu-top li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    
+}
+
+
+header .mnu-top li a:visited, header .mnu-top li a:link,
+header .mnu-top li a:link
+{
+    color: #e68dba
+
+   
+}
+
+
+header .mnu-top li a{
+    display: block;
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+@media (max-width: 700px)
+{
+    .content-container{
+        margin-top: 5%;
+        flex-direction: column;
+    }
+}
+
+section .text-container{
+    width: 40%;
+    font-size: 20px;
+}
+
+.content-container img{
+    width: 20%;
+    height: 20%;
+}
+
+
+footer{
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+.footer-text p{
+        padding: 0;
+        margin: 0;
+        color: #e68dba;
+}
+
+
+.content-container2 .map h1
+{
+    font-size: 20px;
+    margin-top: 0;
+}
+
+
+.content-container2 .text-container2 h1{
+    margin-top: 0;
+}
+
+
+.content-container2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+
+}
+
+section .text-container2{
+    margin-right: 5%;
+    font-size: 20px;
+    order: -1;
+}
+
+@media (max-width: 856px) {
+    .content-container2{
+        flex-direction: column;
+        padding: 5% 5%;
+    }
+  }
+
+
+
+  .gradient-button {
+    text-decoration: none;
+    color: #e68dba;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+  }
+  .gradient-button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: white;
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+  }
+  .gradient-button:hover {
+    background: rgba(255, 255, 255, 0);
+  }
+  .gradient-button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+  }
+
+  .register-button{
+      margin-top: 10%;
+        margin-bottom: 10%;
+      display: flex;
+      justify-content: center;
+  }
+
+
+  .products{
+    padding-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   transition: 0.3s;
+}
+
+
+
+
+  .product-item {
+    
+    height: 440px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+    font-family: "Open Sans";
+    transition: .3s ease-in;
+    margin-bottom: 2%;
+ }
+
+ .product-item:hover{
+    height: 450px;
+    width: 310px;
+ }
+
+ .product-item img {
+    display: block;
+    width: 100%;
+ }
+ .product-list {
+    background: #fafafa;
+    padding: 15px 0;
+ }
+ .product-list h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #444444;
+    margin: 0 0 10px 0;
+ }
+ .price {
+    font-size: 18px;
+    color: #fc5a5a;
+    display: block;
+    margin-bottom: 12px;
+ }
+ .button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 12px;
+    background: #cccccc;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 28px;
+    transition: .3s ease-in;
+ }
+ .product-item .button:hover {
+    background: #fc5a5a;
+ }
+
+
+
+ .postcard {
+    max-width: 350px;
+    padding: 20px;
+    background: #fffdee;
+    border: 10px solid transparent;
+    border-image: 10 repeating-linear-gradient(135deg, #C42061, #C42061 10px, transparent 10px, transparent 20px, #FBCFDF 20px, #FBCFDF 30px, transparent 30px, transparent 40px);
+    font-family: 'Playfair Display';
+    color: #605756;
+ }
+ .form-row {
+    margin-bottom: 15px;
+ }
+ .form-row input[type="text"], .form-row input[type="email"], .form-row textarea {
+    width: 100%;
+    padding: 0 10px;
+    line-height: 35px;
+    border-width: 0;
+    outline: none;
+    background-color: #faf3c0a1;
+    background-size: 8px 35px;
+    font-family: 'Playfair Display';
+ }
+ .form-row textarea {
+    background-attachment: local;
+    background-repeat: repeat;
+    resize: none;
+ }
+ .form-row input[type="submit"], .form-row input[type="close"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #F67CA5;
+    border-width: 0;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Playfair Display';
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fffdee;
+    text-transform: uppercase;
+    transition: 1s cubic-bezier(.165, .84, .44, 1);
+ }
+
+ 
+ .form-row input[type=submit]:hover {
+    background: #C42061;
+ }
+
+.feedback-header{
+    margin-left: 16px;
+}
+
+
+ /* Style the container with a rounded border, grey background and some padding and margin */
+.feedback-container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 16px;
+}
+
+/* Clear floats after containers */
+.feedback-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.feedback-container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.feedback-container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .feedback-container {
+    text-align: center;
+  }
+
+  .feedback-container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+
+dialog{
+    border: 0;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+dialog #close{
+    display: flex;
+    justify-content: end;
+}
+
+dialog p:visited{
+    color: black;
+}
+
+button{
+    cursor: pointer;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+  
