@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,18 +18,29 @@
             </a>
             
         </div>
-        
-    
-        
-        <ul class="mnu-top">
-            <li><a href="services.html">Услуги</a></li>
+        <!--
+             <ul class="mnu-top">
             <li><a href="feedback.html">Отзывы</a></li>
             <li><a href="contacts.html">Контакты</a></li>
-        
-            
         </ul>
+         -->
+         
+         
+        
     </header>
     <section>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="/index.html">Главная</a></li>
+                    <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+                    <li><a class="menu__item" href="feedback.html">Отзывы</a></li>
+            </ul>
+          </div>
         
         <dialog>
             <a href="" id="close" ><p>Закрыть</p></a>
@@ -60,13 +71,85 @@
             </div>
             
         </div>
-        
 
-        <div class="register-button">
-            <button class="gradient-button" id="show">Записаться</button>
-        
+        <div class="content-container3">
+            <img src="img/chair.png" alt="Главное изображение">
+            <div class="text-container3">
+                <h1>Услуги</h1>
+                <p class="subtitle">
+                    Весь перечень услуг и прайс-лист можете посмотреть у нас на сайте.
+                </p>
+            </div>
+            
         </div>
 
+
+
+        <div class="products">
+            <div class="product-item">
+                <a href="depilation.html">
+                <img src="img/depilaciya.png">
+                <div class="product-list">
+                  <h3>Депиляция</h3>
+                    <span class="price">от ₽ 500</span>
+                    <button class="button" id="show">Записаться</button>
+                </div>
+                </a>    
+            </div>
+            <div class="product-item">
+                <a href="cosmetic.html">
+                <img src="img/cosmetic.jpg">
+                <div class="product-list">
+                  <h3>Косметология</h3>
+                    <span class="price">от ₽ 1000</span>
+                    <button class="button" id="show">Записаться</button>
+                </div>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="manik.html">
+                <img src="img/manikjpg.jpg">
+                <div class="product-list">
+                  <h3>Маникюр</h3>
+                    <span class="price">от ₽ 400</span>
+                    <button class="button" id="show">Записаться</button>
+                </div>
+                </a>
+            </div>
+        
+            <div class="product-item">
+                <a href="browes.html">
+                <img src="img/брови.jpg">
+                <div class="product-list">
+                <h3>Брови</h3>
+                    <span class="price">от ₽ 400</span>
+                    <button class="button" id="show">Записаться</button>
+                </div>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="haircut.html">
+                <img src="img/hair.png">
+                <div class="product-list">
+                <h3>Стрижка</h3>
+                    <span class="price">от ₽ 500</span>
+                    <button class="button" id="show">Записаться</button>
+                </div>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="tan.html">
+                <img src="img/tan.png">
+                <div class="product-list">
+                <h3>Загар</h3>
+                    <span class="price">от ₽ 25</span>
+                    <button class="button" id="show">Записаться</button>
+                </div>
+                </a>
+            </div>
+        </div>
+        
+    
        
         
         

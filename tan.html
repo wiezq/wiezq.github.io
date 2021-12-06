@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,13 +21,18 @@
         
     
         
-        <ul class="mnu-top">
-            <li><a href="services.html">Услуги</a></li>
-            <li><a href="feedback.html">Отзывы</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
         
-            
-        </ul>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="/index.html">Главная</a></li>
+                    <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+                    <li><a class="menu__item" href="feedback.html">Отзывы</a></li>
+            </ul>
+          </div>
     </header>
     <section>
         
@@ -57,13 +62,47 @@
                     Только во второй половине 90-х годов появляются солярии современного дизайна.С каждым годом идёт усовершенствование кабин. Сейчас они оборудованны вентиляцией, аромаувлажнением, аудиосистемой и даже коллагеновыми лампами.
                     мы уверенно можем сказать, что загар с современном солярии - это удовольствие и комфорт.
                 </p>
-                <h1>Цена</h1>
-                <p class="subtitle">
-                    1488 рублей
-                </p>
             </div>
             
         </div>
+
+        <div class="pricing">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Солярий</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Солярий</td>
+                        <td>25 ₽/1 мин</td>
+                    </tr>
+                    <tr>
+                        <td>Крем для солярия (10 гр.)</td>
+                        <td>15 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Шапочка</td>
+                        <td>15 ₽</td>
+                    </tr>
+                    <tr>
+                        <td><b>Моментальный загар	</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Моментальный загар</td>
+                        <td>1 500 ₽</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </div>
         
 
         <div class="register-button">

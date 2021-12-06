@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,13 +21,18 @@
         
     
         
-        <ul class="mnu-top">
-            <li><a href="services.html">Услуги</a></li>
-            <li><a href="feedback.html">Отзывы</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
         
-            
-        </ul>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="/index.html">Главная</a></li>
+                    <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+                    <li><a class="menu__item" href="feedback.html">Отзывы</a></li>
+            </ul>
+          </div>
     </header>
     <section>
         
@@ -50,20 +55,61 @@
         </form></dialog>
 
         <div class="content-container">
-            <img src="img/depilaciya.png" alt="Главное изображение">
+            <div class="content-img"><img src="img/depilaciya.png" alt="Главное изображение"></div>
+            
             <div class="text-container">
                 <h1>Депиляция</h1>
                 <p class="subtitle">
                     Почувствовать уверенность в себе и на некоторое время забыть об удалении волос и призвана процедура депиляции.
-
-Эпиляция – это процесс удаления нежелательных волос. В салоне Royal Beauty Вы можете удалить волоски из подмышечных впадин, с рук, живота, ягодиц, бикини и спины. Депиляция – это еще и неотъемлемая часть подготовки к пляжному сезону, когда все то, что было скрыто под одеждой, становится заметным.
-                </p>
-                <h1>Цена</h1>
-                <p class="subtitle">
-                    1488Р
+                    Эпиляция – это процесс удаления нежелательных волос. В салоне Royal Beauty Вы можете удалить волоски из подмышечных впадин, с рук, живота, ягодиц, бикини и спины. Депиляция – это еще и неотъемлемая часть подготовки к пляжному сезону, когда все то, что было скрыто под одеждой, становится заметным.
                 </p>
             </div>
             
+            </div>
+            <div class="pricing">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Восковая депиляция</b></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Бикини глубокое</td>
+                            <td>650 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Ноги до колен</td>
+                            <td>400 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Руки до локтя</td>
+                            <td>200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td><b>Депиляция Шугаринг</b></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Бикини глубокое</td>
+                            <td>700 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Подмышечные впадины</td>
+                            <td>700 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Руки полностью</td>
+                            <td>800 ₽</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
         </div>
         
 
