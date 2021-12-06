@@ -36,7 +36,7 @@
             </label>
         
             <ul class="menu__box">
-              <li><a class="menu__item" href="/index.html">Главная</a></li>
+              <li><a class="menu__item" href="index.html">Главная</a></li>
                     <li><a class="menu__item" href="contacts.html">Контакты</a></li>
                     <li><a class="menu__item" href="feedback.html">Отзывы</a></li>
             </ul>
@@ -64,10 +64,10 @@
             <div class="content-img"><img src="img/beauty.png" alt="Главное изображение"></div>
             
             <div class="text-container">
-                <h1>Салон красоты Royal Beauty</h1>
+                <h1>Салон красоты</h1>
                 <p class="subtitle">
                     Все Beauty услуги в одном месте и по цене чашки кофе.
-                    Вас обслужат высококвалифицированные сотрудники с большим стажем.
+                    Вас обслужат опытные сотрудники с большим стажем.
                 </p>
             </div>
             
@@ -90,6 +90,7 @@
             <div class="product-item">
                 <a href="depilation.html">
                 <img src="img/depilaciya.png">
+                </a>
                 <div class="product-list">
                   <h3>Депиляция</h3>
                     <span class="price">от ₽ 500</span>
@@ -100,54 +101,59 @@
             <div class="product-item">
                 <a href="cosmetic.html">
                 <img src="img/cosmetic.jpg">
+                </a>
                 <div class="product-list">
                   <h3>Косметология</h3>
                     <span class="price">от ₽ 1000</span>
                     <button class="button" id="show">Записаться</button>
                 </div>
-                </a>
+                
             </div>
             <div class="product-item">
                 <a href="manik.html">
                 <img src="img/manikjpg.jpg">
+                </a>
                 <div class="product-list">
                   <h3>Маникюр</h3>
                     <span class="price">от ₽ 400</span>
                     <button class="button" id="show">Записаться</button>
                 </div>
-                </a>
+                
             </div>
         </div>
         <div class="products">
             <div class="product-item">
                 <a href="browes.html">
                 <img src="img/брови.jpg">
+                </a>
                 <div class="product-list">
                 <h3>Брови</h3>
                     <span class="price">от ₽ 400</span>
                     <button class="button" id="show">Записаться</button>
                 </div>
-                </a>
+                
             </div>
             <div class="product-item">
                 <a href="haircut.html">
                 <img src="img/hair.png">
+                </a>
                 <div class="product-list">
                 <h3>Стрижка</h3>
                     <span class="price">от ₽ 500</span>
                     <button class="button" id="show">Записаться</button>
                 </div>
-                </a>
+                
             </div>
             <div class="product-item">
                 <a href="tan.html">
                 <img src="img/tan.png">
+                </a>
                 <div class="product-list">
                 <h3>Загар</h3>
                     <span class="price">от ₽ 25</span>
                     <button class="button" id="show">Записаться</button>
                 </div>
-                </a>
+                
             </div>
             </div>
         </div>
@@ -169,18 +175,14 @@
     
 
     <script type = text/javascript>
-    var dialog = document.querySelector('dialog');
-    document.querySelector('#show').onclick = function() {
-    dialog.showModal();
-    };
-    document.querySelector('#close').onclick = function() {
-    dialog.close();
-    };
-
-    let array = ['123123','dfdsfsd','13asdds'];
-    array.forEach(element => {
-        
-    });
+        var dialog = document.querySelector('dialog');
+        let product = (document.querySelectorAll('#show'));
+        product.forEach((item) => { item.onclick = function(){
+            dialog.showModal();
+        }})
+        document.querySelector('#close').onclick = function() {
+        dialog.close();
+        };
     </script>
 </body>
 </html>

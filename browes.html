@@ -70,8 +70,8 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Услуга</th>
-                        <th>Цена</th>
+                        <th><p>Услуга</p></th>
+                        <th><p>Цена, ₽</p></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,15 +81,15 @@
                     </tr>
                     <tr>
                         <td>Оформление пинцетом/воском</td>
-                        <td>400 ₽</td>
+                        <td>400</td>
                     </tr>
                     <tr>
                         <td>Ламинирование бровей Elleebana</td>
-                        <td>1 600 ₽</td>
+                        <td>1600</td>
                     </tr>
                     <tr>
                         <td>Вельвет бровей</td>
-                        <td>2 000 ₽</td>
+                        <td>2000</td>
                     </tr>
                     <tr>
                         <td><b>Ресницы</b></td>
@@ -97,15 +97,15 @@
                     </tr>
                     <tr>
                         <td>Ламинирование ресниц</td>
-                        <td>1 300 ₽</td>
+                        <td>1300</td>
                     </tr>
                     <tr>
                         <td>Вельвет ресниц</td>
-                        <td>2 000 ₽</td>
+                        <td>2000</td>
                     </tr>
                     <tr>
                         <td>Наращивание одинарными 1D</td>
-                        <td>1 800 ₽</td>
+                        <td>1800</td>
                     </tr>
                 </tbody>
             </table>
@@ -133,18 +133,14 @@
     
 
     <script type = text/javascript>
-    var dialog = document.querySelector('dialog');
-    document.querySelector('#show').onclick = function() {
-    dialog.showModal();
-    };
-    document.querySelector('#close').onclick = function() {
-    dialog.close();
-    };
-
-    let array = ['123123','dfdsfsd','13asdds'];
-    array.forEach(element => {
-        
-    });
+        var dialog = document.querySelector('dialog');
+        let product = (document.querySelectorAll('#show'));
+        product.forEach((item) => { item.onclick = function(){
+            dialog.showModal();
+        }})
+        document.querySelector('#close').onclick = function() {
+        dialog.close();
+        };
     </script>
 </body>
 </html>

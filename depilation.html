@@ -70,8 +70,8 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Услуга</th>
-                            <th>Цена</th>
+                            <th><p>Услуга</p></th>
+                            <th><p>Цена</p></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -81,15 +81,15 @@
                         </tr>
                         <tr>
                             <td>Бикини глубокое</td>
-                            <td>650 ₽</td>
+                            <td>650</td>
                         </tr>
                         <tr>
                             <td>Ноги до колен</td>
-                            <td>400 ₽</td>
+                            <td>400</td>
                         </tr>
                         <tr>
                             <td>Руки до локтя</td>
-                            <td>200 ₽</td>
+                            <td>200</td>
                         </tr>
                         <tr>
                             <td><b>Депиляция Шугаринг</b></td>
@@ -97,15 +97,15 @@
                         </tr>
                         <tr>
                             <td>Бикини глубокое</td>
-                            <td>700 ₽</td>
+                            <td>700</td>
                         </tr>
                         <tr>
                             <td>Подмышечные впадины</td>
-                            <td>700 ₽</td>
+                            <td>700</td>
                         </tr>
                         <tr>
                             <td>Руки полностью</td>
-                            <td>800 ₽</td>
+                            <td>800</td>
                         </tr>
                         
                     </tbody>
@@ -134,18 +134,14 @@
     
 
     <script type = text/javascript>
-    var dialog = document.querySelector('dialog');
-    document.querySelector('#show').onclick = function() {
-    dialog.showModal();
-    };
-    document.querySelector('#close').onclick = function() {
-    dialog.close();
-    };
-
-    let array = ['123123','dfdsfsd','13asdds'];
-    array.forEach(element => {
-        
-    });
+        var dialog = document.querySelector('dialog');
+        let product = (document.querySelectorAll('#show'));
+        product.forEach((item) => { item.onclick = function(){
+            dialog.showModal();
+        }})
+        document.querySelector('#close').onclick = function() {
+        dialog.close();
+        };
     </script>
 </body>
 </html>

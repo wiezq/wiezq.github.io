@@ -61,10 +61,6 @@
                 <p class="subtitle">
                     Просто поддерживать текущий образ и внешний вид - обязательная задача успешной и красивой, а главное - современной женщины. Но мы так любим перемены! И насколько важно, чтобы при изменении имиджа все прошло гладко, чтобы образ "прижился" и все получилось идеально. Возможно все это только при совместной работе с грамотным и опытным стилистом. 
                 </p>
-                <h1>Цена</h1>
-                <p class="subtitle">
-                    1488 рублей
-                </p>
             </div>
             
         </div>
@@ -74,8 +70,8 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Услуга</th>
-                        <th>Цена</th>
+                        <th><p>Услуга</p></th>
+                        <th><p>Цена</p></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -93,7 +89,7 @@
                     </tr>
                     <tr>
                         <td>Стрижка горячим лезвием</td>
-                        <td>1 500 ₽</td>
+                        <td>1500 ₽</td>
                     </tr>
                     <tr>
                         <td><b>Окрашивание волос</b></td>
@@ -101,15 +97,15 @@
                     </tr>
                     <tr>
                         <td>Окрашивание в 1 тон короткая</td>
-                        <td>1 500 ₽</td>
+                        <td>1500 ₽</td>
                     </tr>
                     <tr>
                         <td>Сложное окрашивание короткая</td>
-                        <td>3 000 ₽</td>
+                        <td>3000 ₽</td>
                     </tr>
                     <tr>
                         <td>Мелирование (без тонирование) короткая</td>
-                        <td>2 000 ₽</td>
+                        <td>2000 ₽</td>
                     </tr>
                 </tbody>
             </table>
@@ -137,18 +133,14 @@
     
 
     <script type = text/javascript>
-    var dialog = document.querySelector('dialog');
-    document.querySelector('#show').onclick = function() {
-    dialog.showModal();
-    };
-    document.querySelector('#close').onclick = function() {
-    dialog.close();
-    };
-
-    let array = ['123123','dfdsfsd','13asdds'];
-    array.forEach(element => {
-        
-    });
+        var dialog = document.querySelector('dialog');
+        let product = (document.querySelectorAll('#show'));
+        product.forEach((item) => { item.onclick = function(){
+            dialog.showModal();
+        }})
+        document.querySelector('#close').onclick = function() {
+        dialog.close();
+        };
     </script>
 </body>
 </html>
