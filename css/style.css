@@ -103,6 +103,12 @@ header .mnu-top li a{
     display: block;
 }
 
+.content-container img{
+    width: 256px;
+    height: 256px;
+}
+
+
 .content-container{
     display: flex;
     justify-content: center;
@@ -113,11 +119,19 @@ header .mnu-top li a{
     
 }
 
+
+
 @media (max-width: 900px)
 {
     .content-container{
         margin-top: 5%;
         flex-direction: column;
+        transition: 0.3 ease-in;
+    }
+    .content-container img{
+        display: none;
+        transition: 0.3 ease-in;
+
     }
 }
 
@@ -128,7 +142,10 @@ section .text-container{
 
 
 
-
+.content-container3 img{
+    width: 256px;
+    height: 256px;
+}
 
 .content-container3{
     display: flex;
@@ -144,6 +161,11 @@ section .text-container{
         flex-direction: column;
     }
 
+    .content-container3 img{
+        display: none;
+        transition: 0.3 ease-in;
+    }
+
     
 }
 
@@ -157,10 +179,7 @@ section .text-container3{
 }
 
 
-.content-container img{
-    width: 512px;
-    height: 512px;
-}
+
 
 
 footer{
@@ -213,6 +232,7 @@ section .text-container2{
     .content-container2{
         flex-direction: column;
         padding: 5% 5%;
+        transition: 0.3 ease-in;
     }
   }
 
@@ -229,6 +249,7 @@ section .text-container2{
   .products{
     padding-top: 50px;
    display: flex;
+   justify-content: center;
    flex-wrap: wrap;
    transition: 0.3s;
    margin-left: auto;
@@ -243,7 +264,7 @@ section .text-container2{
     height: 440px;
     width: 300px;
     text-align: center;
-    margin: 0 auto;
+    margin: 30px 30px;
     background: white;
     font-family: 'Montserrat', sans-serif;
     transition: .3s ease-in;
@@ -341,7 +362,6 @@ section .text-container2{
 }
 
 
- /* Style the container with a rounded border, grey background and some padding and margin */
 .feedback-container {
     border: 2px solid #ccc;
     background-color: #eee;
@@ -350,27 +370,25 @@ section .text-container2{
     margin: 16px 16px;
 }
 
-/* Clear floats after containers */
 .feedback-container::after {
     content: "";
     clear: both;
     display: table;
 }
 
-/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+
 .feedback-container img {
     float: left;
     margin-right: 20px;
     border-radius: 50%;
 }
 
-/* Increase the font-size of a span element */
+
 .feedback-container span {
     font-size: 20px;
     margin-right: 15px;
 }
 
-/* Add media queries for responsiveness. This will center both the text and the image inside the container */
 @media (max-width: 500px) {
   .feedback-container {
     text-align: center;
